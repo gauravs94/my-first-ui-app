@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: latest
+    commands:
+      - echo "installing my-first-app"
+
+  pre_build:
+    commnads:
+      - echo "we are in the pre-build phase"
+
+  build:
+    commands:
+      - echo "we are in build phase"
+      - echo "we will run some tests"
+
+  post_build:
+    commands:
+      - echo "we are in post build phase"
